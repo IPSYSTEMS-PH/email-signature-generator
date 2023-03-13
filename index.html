@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
-        <div class="content flex-row-fluid py-10" id="kt_content">
+    <div class="d-flex flex-column-fluid align-items-start container-xxl">
+        <div class="content flex-row-fluid py-10">
             <div class="form d-flex flex-column flex-lg-row fv-plugins-bootstrap5 fv-plugins-framework">
                 <div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
                     <div class="d-flex flex-column gap-7 gap-lg-10">
@@ -70,10 +70,8 @@
                                     </div>
                                 </div>
 
-                                <div class="separator border-primary my-10"></div>
-                                <h2 class="mb-10">
-                                    Promotional Banner
-                                </h2>
+                                <div class="separator border-secondary my-10"></div>
+                                <h2 class="mb-10">Promotional Banner</h2>
                                 <div class="mb-5 fv-row">
                                     <label class="required form-label">Promotional Banner Image Link</label>
                                     <input type="text" name="promo_banner_img" id="promo_banner_img" class="form-control mb-2" placeholder="Please enter the promotional banner image link" value="https://ipsystems.ph/wp-content/uploads/2022/12/Promotional-Banner.png" />
@@ -86,10 +84,8 @@
                                     <div class="text-muted fs-7">Please enter the promotional link</div>
                                     <div class="fv-plugins-message-container invalid-feedback"></div>
                                 </div>
-                                <div class="separator border-primary my-10"></div>
-                                <h2 class="mb-10">
-                                    Company Contact Info
-                                </h2>
+                                <div class="separator border-secondary my-10"></div>
+                                <h2 class="mb-10">Company Contact Info</h2>
                                 <div class="mb-5 fv-row">
                                     <div class="d-flex flex-wrap gap-5">
                                         <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
@@ -137,8 +133,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="card card-flush py-20 mt-20 col-md-8" id="preview">
+            <div class="separator border-primary my-20"></div>
+            <div class="card card-flush col-md-8" id="preview">
                 <div class="card-header">
                     <div class="card-title">
                         <h2>Email Signature Template Preview</h2>
@@ -149,226 +145,243 @@
                 </div>
 
                 <div class="card-body pt-0">
-                    <span style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-weight: 400">Best Regards,</span>
+                    <p class="muted">This is a quick glimpse of how your email signature will look</p>
+                    <button id="btn_copy" class="btn btn-primary btn-sm mb-10" disabled data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to copy the signature" onclick="CopyToClipboard('email_signature_template')">Copy Signature</button>
                     <br />
-                    <br />
-                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; width: 600px" width="600">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
-                                        <tbody>
-                                            <tr>
-                                                <td style="vertical-align: top; margin: 0; padding: 0; padding-right: 24px;">
-                                                    <h2 color="#000000" style="margin: 0px; font-size: 24px !important; line-height: 1.3; color: rgb(253, 154, 36); font-weight: 600; font-family: Poppins, Century Gothic, sans-serif;" id="preview_full_name">Jethro T. Jorolan</h2>
-                                                    <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 18px !important; line-height: 1.3; font-weight: 600; font-family: Poppins, Century Gothic, sans-serif;" id="preview_job_title">Web Developer</p>
-                                                    <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 16px !important; line-height: 1.3; font-family: Poppins, Century Gothic, sans-serif;" id="preview_department">Marketing</p>
-                                                </td>
-                                                <td width="10">
-                                                    <div style="width: 10px"></div>
-                                                </td>
-                                                <!-- border-left: 1px solid rgb(253, 154, 36); -->
-                                                <td id="badge_wrap" color="#fd9a24" direction="vertical" width="20" style="width: 200px; border-left: none; border-bottom: none; border-top: none; border-right: none; text-align: left; vertical-align: top">
-                                                    <div id="badge_img"></div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="14"></td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: middle">
-                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
-                                        <tbody>
-                                            <tr height="20" style="vertical-align: middle">
-                                                <td width="30" style="vertical-align: top">
-                                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="vertical-align: bottom">
-                                                                    <span color="#fd9a24" width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/phone.png" color="#fd9a24" alt="mobilePhone" width="13" style="display: block"
-                                    /></span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                                <td style="padding: 0px; color: rgb(0, 0, 0)">
-                                                    <div id="contact_info">
-                                                        <a href="tel:+(63)286383264" color="#000000" style="color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif;" id="preview_company_phone"><span>+(63)286383264</span></a>                                                        <span id="divider">|</span>
-                                                        <a href="tel:+(63)9876543210" color="#000000" style="color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif;" id="preview_company_mobile"><span>+(63)9876543210</span></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr height="20" style="vertical-align: middle">
-                                                <td width="30" style="vertical-align: top">
-                                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="vertical-align: bottom">
-                                                                    <span width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/envelope.png" alt="emailAddress" width="13" style="display: block"
-                                    /></span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                                <td style="padding: 0px">
-                                                    <a href="mailto:jjorolan@ipsystems.ph" color="#000000" id="preview_email_address" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif;">jjorolan@ipsystems.ph</a>
-                                                </td>
-                                            </tr>
-                                            <tr height="20" style="vertical-align: middle">
-                                                <td width="30" style="vertical-align: top">
-                                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="vertical-align: bottom">
-                                                                    <span color="#fd9a24" width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/map-marker.png" color="#fd9a24" alt="address" width="13" style="display: block"
-                                    /></span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                                <td style="padding: 0px">
-                                                    <p color="#000000" style="font-size: 14px !important; color: rgb(0, 0, 0); line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif;" id="preview_company_address">
-                                                        1004 Antel Global Corporate Center, #3 J. Vargas Avenue Ortigas Center,<br /> Pasig City 1605 Philippines
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="14"></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">
-                                    <div style="display: block; text-align: center; border-radius: 14px !important; ">
-                                        <a id="preview_promo_link" target="_blank" rel="noopener noreferrer" href="https://ipsystems.ph/" color="#fd9a24" style="
-                          border-width: initial;
-                          border-style: none;
-                          border-color: initial;
-                          display: inline-block;
-                          background-color: transparent;
-                          color: rgb(255, 255, 255);
-                          font-weight: 700;
-                          text-decoration: none;
-                          text-align: center;
-                          line-height: 1;
-                          font-size: 12px;
-                          border-radius: 3px;
-                        "><img src="https://ipsystems.ph/wp-content/uploads/2022/12/Promotional-Banner.png" style="text-decoration: none; width: 100% !important; height: auto !important; border-radius: 14px !important; " id="preview_promo_banner_img"
-                                            /></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="14"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table cellpadding="0" cellspacing="0" style="display: inline-block; vertical-align: -webkit-baseline-middle; font-size: large; font-family: Poppins, Century Gothic, sans-serif;">
-                                        <tbody>
-                                            <tr style="text-align: left">
-                                                <td>
-                                                    <a href="https://ipsystems.ph" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Website.png" alt="website" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
-                                                                </td>
-                                                                <td>Visit us ipsystems.ph</td>
-                                                            </tr>
+                    <div id="email_signature_template">
+                        <span style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-weight: 400">Best Regards,</span>
+                        <br />
+                        <br />
+                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; width: 600px" width="600">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top; margin: 0; padding: 0; padding-right: 24px">
+                                                        <h2 color="#000000" style="margin: 0px; font-size: 24px !important; line-height: 1.3; color: rgb(253, 154, 36); font-weight: 600; font-family: Poppins, Century Gothic, sans-serif" id="preview_full_name">
+                                                            Jethro T. Jorolan
+                                                        </h2>
+                                                        <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 18px !important; line-height: 1.3; font-weight: 600; font-family: Poppins, Century Gothic, sans-serif" id="preview_job_title">
+                                                            Web Developer
+                                                        </p>
+                                                        <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 16px !important; line-height: 1.3; font-family: Poppins, Century Gothic, sans-serif" id="preview_department">Marketing</p>
+                                                    </td>
+                                                    <td width="10">
+                                                        <div style="width: 10px"></div>
+                                                    </td>
+                                                    <!-- border-left: 1px solid rgb(253, 154, 36); -->
+                                                    <td id="badge_wrap" color="#fd9a24" direction="vertical" width="20" style="width: 200px; border-left: none; border-bottom: none; border-top: none; border-right: none; text-align: left; vertical-align: top">
+                                                        <div id="badge_img"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="14"></td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: middle">
+                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
+                                            <tbody>
+                                                <tr height="20" style="vertical-align: middle">
+                                                    <td width="30" style="vertical-align: top">
+                                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align: bottom">
+                                                                        <span color="#fd9a24" width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/phone.png" color="#fd9a24" alt="mobilePhone" width="13" style="display: block" /></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
                                                         </table>
-                                                    </a>
-                                                </td>
-                                                <td width="10">
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <a href="https://www.facebook.com/ipsystemsinc/" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Facebook.png" alt="facebook" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
-                                                                </td>
-                                                                <td>Follow on Facebook</td>
-                                                            </tr>
+                                                    </td>
+                                                    <td style="padding: 0px; color: rgb(0, 0, 0)">
+                                                        <div id="contact_info">
+                                                            <a href="tel:+(63)286383264" color="#000000" style="color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif" id="preview_company_phone">+(63)286383264</a>
+                                                            <span id="divider">|</span>
+                                                            <a href="tel:+(63)9876543210" color="#000000" style="color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif" id="preview_company_mobile">+(63)9876543210</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr height="20" style="vertical-align: middle">
+                                                    <td width="30" style="vertical-align: top">
+                                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align: bottom">
+                                                                        <span width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/envelope.png" alt="emailAddress" width="13" style="display: block" /></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
                                                         </table>
-                                                    </a>
-                                                </td>
-                                                <td width="10">
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <a href="https://www.linkedin.com/company/ipsystemsinc/" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Linkedin.png" alt="Linkedin" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
-                                                                </td>
-                                                                <td>Follow on Linkedin</td>
-                                                            </tr>
-                                                        </table>
-                                                    </a>
-                                                </td>
-
-                                                <td width="10">
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <a href="https://twitter.com/ipsystemsph" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Twitter.png" alt="Twitter" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
-                                                                </td>
-                                                                <td>Follow on Twitter</td>
-                                                            </tr>
-                                                        </table>
-                                                    </a>
-                                                </td>
-                                                <td width="10">
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <a href="https://www.youtube.com/channel/UC9ByJzsCpeNKkfte5FfdqFg/videos" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Youtube.png" alt="Youtube" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
-                                                                </td>
-                                                                <td>Follow on Youtube</td>
-                                                            </tr>
-                                                        </table>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="14"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="font-size: 10px !important; line-height: 1.3; font-family: Source Sans Pro, Verdana, sans-serif;">
-                                    The content of this message is confidential. If you have received it by mistake, please inform us and then delete the message. It is forbidden to copy, forward, or in any way reveal the contents of this message to anyone. The integrity and security of
-                                    this email cannot be guaranteed. Therefore, the sender will not be held liable for any damage caused by the message.
-                                </td>
-                            </tr>
+                                                    </td>
+                                                    <td style="padding: 0px">
+                                                        <a href="mailto:jjorolan@ipsystems.ph" color="#000000" id="preview_email_address" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif">jjorolan@ipsystems.ph</a
+                              >
+                            </td>
+                          </tr>
+                          <tr height="20" style="vertical-align: middle">
+                            <td width="30" style="vertical-align: top">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                <tbody>
+                                  <tr>
+                                    <td style="vertical-align: bottom">
+                                      <span color="#fd9a24" width="11" style="display: inline-block"><img src="https://ipsystems.ph/wp-content/uploads/2022/12/map-marker.png" color="#fd9a24" alt="address" width="13" style="display: block" /></span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px">
+                              <p color="#000000" style="font-size: 14px !important; color: rgb(0, 0, 0); line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif" id="preview_company_address">
+                                1004 Antel Global Corporate Center, #3 J. Vargas Avenue Ortigas Center,<br />
+                                Pasig City 1605 Philippines
+                              </p>
+                            </td>
+                          </tr>
                         </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="14"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <div style="display: block; text-align: center; border-radius: 14px !important">
+                        <a
+                          id="preview_promo_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://ipsystems.ph/"
+                          color="#fd9a24"
+                          style="
+                            border-width: initial;
+                            border-style: none;
+                            border-color: initial;
+                            display: inline-block;
+                            background-color: transparent;
+                            color: rgb(255, 255, 255);
+                            font-weight: 700;
+                            text-decoration: none;
+                            text-align: center;
+                            line-height: 1;
+                            font-size: 12px;
+                            border-radius: 3px;
+                          "
+                          ><img src="https://ipsystems.ph/wp-content/uploads/2022/12/Promotional-Banner.png" style="text-decoration: none; width: 100% !important; height: auto !important; border-radius: 14px !important" id="preview_promo_banner_img"
+                        /></a>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td height="14"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" style="display: inline-block; vertical-align: -webkit-baseline-middle; font-size: large; font-family: Poppins, Century Gothic, sans-serif">
+                                <tbody>
+                                    <tr style="text-align: left">
+                                        <td>
+                                            <a href="https://ipsystems.ph" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Website.png" alt="website" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
+                                                        </td>
+                                                        <td>Visit us at ipsystems.ph</td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </td>
+                                        <td width="10">
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <a href="https://www.facebook.com/ipsystemsinc/" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Facebook.png" alt="facebook" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
+                                                        </td>
+                                                        <td>Follow us on Facebook</td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </td>
+                                        <td width="10">
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/company/ipsystemsinc/" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Linkedin.png" alt="Linkedin" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
+                                                        </td>
+                                                        <td>Follow us on Linkedin</td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </td>
+
+                                        <td width="10">
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <a href="https://twitter.com/ipsystemsph" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Twitter.png" alt="Twitter" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
+                                                        </td>
+                                                        <td>Follow us on Twitter</td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </td>
+                                        <td width="10">
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <a href="https://www.youtube.com/channel/UC9ByJzsCpeNKkfte5FfdqFg/videos" color="#ff6224" style="display: inline-block; padding: 0px; text-decoration: underline; color: rgb(0, 0, 0); font-size: 10px !important">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://ipsystems.ph/wp-content/uploads/2022/12/Youtube.png" alt="Youtube" color="#ff6224" height="20" style="margin-right: 5px; display: block" />
+                                                        </td>
+                                                        <td>Subscribe to us on Youtube</td>
+                                                    </tr>
+                                                </table>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="14"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="font-size: 10px !important; line-height: 1.3; font-family: Source Sans Pro, Verdana, sans-serif">
+                            The content of this message is confidential. If you have received it by mistake, please inform us and then delete the message. It is forbidden to copy, forward, or in any way reveal the contents of this message to anyone. The integrity and security of
+                            this email cannot be guaranteed. Therefore, the sender will not be held liable for any damage caused by the message.
+                        </td>
+                    </tr>
+                    </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <script src="assets/js/scripts.bundle.js "></script>
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
 
     <script>
         function generate_data() {
@@ -389,11 +402,10 @@
             document.getElementById("preview_company_mobile").innerHTML = cm;
             document.getElementById("preview_company_mobile").href = "tel:" + cm;
 
-            if (cm.value == "" || cp.value == "") {
+            if (document.getElementById("company_mobile").value == "" || document.getElementById("company_phone").value == "") {
                 console.log("cm no value");
                 document.getElementById("divider").innerHTML = "";
             }
-
 
             var ca = document.getElementById("company_address").value;
             var ca1 = document.getElementById("company_address_1").value;
@@ -418,6 +430,40 @@
             var pl = document.getElementById("promo_link").value;
             document.getElementById("preview_promo_link").href = pl;
             location.href = "#preview";
+        }
+
+        function CopyToClipboard(element) {
+            var doc = document,
+                text = doc.getElementById(element),
+                range,
+                selection;
+
+            if (doc.body.createTextRange) {
+                range = doc.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = doc.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            button = document.getElementById("btn_copy");
+            const currentLabel = "Copy Signature";
+            // Exit label update when already in progress
+            if (button.innerHTML === "Copied!") {
+                return;
+            }
+
+            // Update button label
+            button.innerHTML = "Copied!";
+            // Revert button label after 3 seconds
+            setTimeout(function() {
+                button.innerHTML = currentLabel;
+            }, 3000);
         }
     </script>
 </body>
