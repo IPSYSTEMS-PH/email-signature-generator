@@ -42,9 +42,16 @@
                                 <div class="mb-5 fv-row">
                                     <div class="d-flex flex-wrap gap-5">
                                         <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
-                                            <label class="required form-label">Department</label>
+                                            <!-- <label class="required form-label">Department</label>
                                             <input type="text" name="department" id="department" class="form-control mb-2" placeholder="Please enter your department" value="Marketing" />
                                             <div class="text-muted fs-7">Please enter your department</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div> -->
+                                            <label class="required form-label">Badge Options</label>
+                                            <select name="badge_option" id="badge_option" class="form-select" aria-label="Select example">
+                          <option value="no_badge" id="no_badge">No badge</option>
+                          <option value="badge_1" id="badge_1">Business Sales</option>
+                          <option value="badge_2" id="badge_2">Business Technical</option>
+                        </select>
                                             <div class="fv-plugins-message-container invalid-feedback"></div>
                                         </div>
                                         <div class="fv-row w-100 flex-md-root">
@@ -58,13 +65,7 @@
                                 <div class="mb-5 fv-row">
                                     <div class="d-flex flex-wrap gap-5">
                                         <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
-                                            <label class="required form-label">Badge Options</label>
-                                            <select name="badge_option" id="badge_option" class="form-select" aria-label="Select example">
-                          <option value="no_badge" id="no_badge">No badge</option>
-                          <option value="badge_1" id="badge_1">Business Sales</option>
-                          <option value="badge_2" id="badge_2">Business Technical</option>
-                        </select>
-                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+
                                         </div>
                                         <div class="fv-row w-100 flex-md-root"></div>
                                     </div>
@@ -167,7 +168,7 @@
                                                         <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 18px !important; line-height: 1.3; font-weight: 600; font-family: Poppins, Century Gothic, sans-serif" id="preview_job_title">
                                                             Web Developer
                                                         </p>
-                                                        <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 16px !important; line-height: 1.3; font-family: Poppins, Century Gothic, sans-serif" id="preview_department">Marketing</p>
+                                                        <!-- <p color="#000000" font-size="large" style="margin: 0px; color: rgb(0, 0, 0); font-size: 16px !important; line-height: 1.3; font-family: Poppins, Century Gothic, sans-serif" id="preview_department">Marketing</p> -->
                                                     </td>
                                                     <td width="10">
                                                         <div style="width: 10px"></div>
@@ -381,8 +382,8 @@
             document.getElementById("preview_full_name").innerHTML = fn;
             var jt = document.getElementById("job_title").value;
             document.getElementById("preview_job_title").innerHTML = jt;
-            var dp = document.getElementById("department").value;
-            document.getElementById("preview_department").innerHTML = dp;
+            // var dp = document.getElementById("department").value;
+            // document.getElementById("preview_department").innerHTML = dp;
             var ea = document.getElementById("email_address").value;
             document.getElementById("preview_email_address").innerHTML = ea;
             document.getElementById("preview_email_address").href = "mailto:" + ea;
