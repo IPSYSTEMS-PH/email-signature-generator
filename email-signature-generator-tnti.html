@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Signature Generator Beta</title>
+    <!-- <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> -->
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="d-flex flex-column-fluid align-items-start container-xxl">
+        <div class="content flex-row-fluid py-10">
+            <div class="form d-flex flex-column flex-lg-row fv-plugins-bootstrap5 fv-plugins-framework">
+                <div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
+                    <div class="d-flex flex-column gap-7 gap-lg-10">
+                        <div class="card card-flush py-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h2>Email Signature Generator <span class="badge badge-secondary">Beta</span></h2>
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="mb-5 fv-row">
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
+                                            <label class="required form-label">Full Name</label>
+                                            <input type="text" name="full_name" id="full_name" class="form-control mb-2" placeholder="Please enter your full name" value="Jethro T. Jorolan" />
+                                            <div class="text-muted fs-7">Please enter your full name</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                        <div class="fv-row w-100 flex-md-root">
+                                            <label class="required form-label">Job Title</label>
+                                            <input type="text" name="job_title" id="job_title" class="form-control mb-2" placeholder="Please enter your job title" value="Web Developer" />
+                                            <div class="text-muted fs-7">Please enter your job title</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5 fv-row">
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
+                                            <!-- <label class="required form-label">Department</label>
+                                            <input type="text" name="department" id="department" class="form-control mb-2" placeholder="Please enter your department" value="Marketing" />
+                                            <div class="text-muted fs-7">Please enter your department</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div> -->
+                                            <!-- <label class="required form-label">Badge Options</label>
+                                            <select name="badge_option" id="badge_option" class="form-select" aria-label="Select example">
+                          <option value="no_badge" id="no_badge">No badge</option>
+                          <option value="badge_1" id="badge_1">Business Sales</option>
+                          <option value="badge_2" id="badge_2">Business Technical</option>
+                        </select> -->
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                        <div class="fv-row w-100 flex-md-root">
+                                            <label class="required form-label">Email Address</label>
+                                            <input type="email" name="email_address" id="email_address" class="form-control mb-2" placeholder="Please enter your email address" value="jjorolan@ipsystems.ph" />
+                                            <div class="text-muted fs-7">Please enter your email address</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="separator border-secondary my-10"></div>
+                                <h2 class="mb-10">Promotional Banner</h2>
+                                <div class="mb-5 fv-row">
+                                    <label class="required form-label">Promotional Banner Image Link</label>
+                                    <input type="text" name="promo_banner_img" id="promo_banner_img" class="form-control mb-2" placeholder="Please enter the promotional banner image link" value="https://ipsystems-ph.github.io/email-signature-generator/assets/media/Promotional-Banner.png"
+                                    />
+                                    <div class="text-muted fs-7">Please enter the promotional banner image link</div>
+                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                </div>
+
+                                <div class="separator border-secondary my-10"></div>
+                                <h2 class="mb-10">Company Contact Info</h2>
+                                <div class="mb-5 fv-row">
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
+                                            <label class="required form-label">Phone</label>
+                                            <input type="tel" name="company_phone" id="company_phone" class="form-control mb-2" placeholder="Please enter company phone number" value="+(63)286383264" />
+                                            <div class="text-muted fs-7">Please enter company phone number</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                        <div class="fv-row w-100 flex-md-root">
+                                            <label class="required form-label">Mobile</label>
+                                            <input type="tel" name="company_mobile" id="company_mobile" class="form-control mb-2" placeholder="Please enter company mobile number" value="+(63)9876543210" />
+                                            <div class="text-muted fs-7">Please enter company mobile number</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5 fv-row">
+                                    <div class="d-flex flex-wrap gap-5">
+                                        <div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
+                                            <label class="required form-label">Company Address</label>
+                                            <input type="text" name="company_address" id="company_address" class="form-control mb-2" placeholder="Please enter the company address" value="1004 Antel Global Corporate Center, #3 J. Vargas Avenue Ortigas Center" />
+                                            <div class="text-muted fs-7">Please enter the company address</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                        <div class="fv-row w-100 flex-md-root">
+                                            <label class="required form-label">City, ZIP code, and country</label>
+                                            <input type="text" name="company_address_1" id="company_address_1" class="form-control mb-2" placeholder="Please enter the company address 2" value="Pasig City 1605 Philippines" />
+                                            <div class="text-muted fs-7">Please enter the City, ZIP code, and country</div>
+                                            <div class="fv-plugins-message-container invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn btn-light me-5">Clear All</button>
+                        <button class="btn btn-primary" href="#preview" onclick="generate_data(); return true">
+                <span class="indicator-label"> Update Changes</span>
+                <span class="indicator-progress">
+                  Please wait...
+                  <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                </span>
+              </button>
+                    </div>
+                </div>
+            </div>
+            <div class="separator border-primary my-20"></div>
+            <div class="card card-flush col-md-8" id="preview">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2>Email Signature Template Preview</h2>
+                    </div>
+                    <div class="card-toolbar">
+                        <a href="https://ipsystems-ph.github.io/email-signature-generator/assets/media/Email Signature Generator Guide.gif" target="_blank" class="btn btn-sm btn-light"> Click here to learn how to use. </a>
+                    </div>
+                </div>
+
+                <div class="card-body pt-0">
+                    <p class="muted">This is a quick glimpse of how your email signature will look</p>
+                    <button id="btn_copy" class="btn btn-primary btn-sm mb-10" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to copy the signature" onclick="CopyToClipboard('email_signature_template')">Copy Signature</button>
+                    <br />
+                    <div id="email_signature_template">
+                        <span style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(21, 38, 55) !important; background-color: rgb(255, 255, 255); font-weight: 400">Best Regards,</span>
+                        <br />
+                        <br />
+                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; width: 600px" width="600">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top; margin: 0; padding: 0; padding-right: 24px">
+                                                        <span style="color: rgb(21, 38, 55) !important; font-weight: 600 !important; font-size: 18pt; font-family: Lucida Handwriting; padding: 0">Jeth</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="14"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align: top; margin: 0; padding: 0; padding-right: 14px">
+                                                        <h2 color="#000000" style="margin: 0px; font-size: 24px !important; line-height: 1.3; color: rgb(23, 85, 151) !important; font-weight: bolder; font-family: Manrope, Arial, sans-serif; text-transform: capitalize !important" id="preview_full_name">
+                                                            Jethro T. Jorolan
+                                                        </h2>
+
+                                                        <!-- <p color="#000000" font-size="large" style="margin: 0px; color: rgb(21, 38, 55) !important;font-size: 16px !important; line-height: 1.3; font-family: Poppins, Century Gothic, sans-serif" id="preview_department">Marketing</p> -->
+                                                    </td>
+                                                    <td width="5" style="border-left: 2px solid rgb(23, 85, 151) !important; border-right: none ; border-top: none; border-bottom: none;">
+                                                        <div style="width: 10px"></div>
+                                                    </td>
+                                                    <!-- border-left: 1px solid rgb(253, 154, 36); -->
+                                                    <td color="#fd9a24" direction="vertical" width="20" style="width: 200px; border-left: none; border-bottom: none; border-top: none; border-right: none; text-align: left; vertical-align: middle">
+                                                        <div>
+                                                            <p color="#000000" font-size="large" style="margin: 0px; color: rgb(21, 38, 55) !important; font-size: 16px !important; line-height: 1.3; font-weight: bold; font-family: Manrope, Arial, sans-serif; text-transform: capitalize !important" id="preview_job_title">
+                                                                Web Developer
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="14"></td>
+                                </tr>
+                                <tr>
+                                    <td id="badge_wrap" color="#fd9a24" direction="vertical" width="20" style="width: 200px; border-left: none; border-bottom: none; border-top: none; border-right: none; text-align: left; vertical-align: middle">
+                                        <div id="badge_img">
+                                            <img style="text-align: left !important; height: auto; width: 80px;" src="https://ipsystems-ph.github.io/email-signature-generator/assets/media/bitdefender-product-sales-professional.png" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="14"></td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: middle">
+                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
+                                            <tbody>
+                                                <tr height="20" style="vertical-align: middle">
+                                                    <td width="30" style="vertical-align: top">
+                                                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial; font-size: 14px !important">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align: bottom; text-align: right">
+                                                                        <span color="#fd9a24" width="11" style="display: inline-block; color: rgb(23, 85, 151) !important; margin-right: 12px !important; font-size: large; font-family: Arial; font-size: 14px !important; font-weight: bold !important">Mobile/Viber:</span
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px; color: rgb(0, 0, 0)">
+                              <div id="contact_info">
+                                <a href="tel:+63286383264" color="#000000" style="color: rgb(21, 38, 55) !important; font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif" id="preview_company_phone"
+                                  >+63286383264</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                          <tr height="20" style="vertical-align: middle">
+                            <td width="30" style="vertical-align: top">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                <tbody>
+                                  <tr>
+                                    <td style="vertical-align: bottom; text-align: right">
+                                      <span
+                                        color="#fd9a24"
+                                        width="11"
+                                        style="display: inline-block; color: rgb(23, 85, 151) !important; margin-right: 12px !important; font-size: large; font-family: Arial; font-size: 14px !important; font-weight: bold !important"
+                                        >Email:</span
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px">
+                              <a
+                                href="mailto:jjorolan@ipsystems.ph"
+                                color="#000000"
+                                id="preview_email_address"
+                                style="text-decoration: none; color: rgb(21, 38, 55) !important; font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif"
+                                >jjorolan@tierranetworks.com.ph</a
+                              >
+                            </td>
+                          </tr>
+                          <tr height="20" style="vertical-align: middle">
+                            <td width="30" style="vertical-align: top">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                <tbody>
+                                  <tr>
+                                    <td style="vertical-align: bottom; text-align: right">
+                                      <span
+                                        color="#fd9a24"
+                                        width="11"
+                                        style="display: inline-block; color: rgb(23, 85, 151) !important; margin-right: 12px !important; font-size: large; font-family: Arial; font-size: 14px !important; font-weight: bold !important"
+                                        >Website:</span
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px">
+                              <a
+                                href="https://tierranetworks.com.ph/"
+                                color="#000000"
+                                id="preview_email_address"
+                                style="text-decoration: none; color: rgb(21, 38, 55) !important; font-size: 14px !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif"
+                                >tierranetworks.com.ph</a
+                              >
+                            </td>
+                          </tr>
+                          <tr height="20" style="vertical-align: middle">
+                            <td width="30" style="vertical-align: top">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial">
+                                <tbody>
+                                  <tr>
+                                    <td style="vertical-align: bottom; text-align: right">
+                                      <span
+                                        color="#fd9a24"
+                                        width="11"
+                                        style="display: inline-block; color: rgb(23, 85, 151) !important; margin-right: 12px !important; font-size: large; font-family: Arial; font-size: 14px !important; font-weight: bold !important"
+                                        >Address:</span
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px">
+                              <p
+                                color="#000000"
+                                style="font-size: 14px !important; color: rgb(21, 38, 55) !important; line-height: 1.5; font-family: Source Sans Pro, Verdana, sans-serif; text-transform: capitalize !important"
+                                id="preview_company_address"
+                              >
+                                2A32 Grand Central Residences - Tower 1, EDSA corner Sultan Road,<br />Mandaluyong City, Metro Manila, Philippines
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td height="14"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <div style="display: block; text-align: center">
+                        <img src="https://ipsystems-ph.github.io/email-signature-generator/assets/media/tnti-banner.jpg" style="width: 100% !important; height: auto !important" id="preview_promo_banner_img" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/scripts.bundle.js "></script>
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+
+    <script>
+      function generate_data() {
+        var url = location.href;
+        var fn = document.getElementById("full_name").value;
+        document.getElementById("preview_full_name").innerHTML = fn;
+        var jt = document.getElementById("job_title").value;
+        document.getElementById("preview_job_title").innerHTML = jt;
+        // var dp = document.getElementById("department").value;
+        // document.getElementById("preview_department").innerHTML = dp;
+        var ea = document.getElementById("email_address").value;
+        document.getElementById("preview_email_address").innerHTML = ea;
+        document.getElementById("preview_email_address").href = "mailto:" + ea;
+        var cp = document.getElementById("company_phone").value;
+        document.getElementById("preview_company_phone").innerHTML = cp;
+        document.getElementById("preview_company_phone").href = "tel:" + cp;
+        var cm = document.getElementById("company_mobile").value;
+        document.getElementById("preview_company_mobile").innerHTML = cm;
+        document.getElementById("preview_company_mobile").href = "tel:" + cm;
+
+        if (document.getElementById("company_mobile").value == "" || document.getElementById("company_phone").value == "") {
+          console.log("cm no value");
+          document.getElementById("divider").innerHTML = "";
+        }
+
+        var ca = document.getElementById("company_address").value;
+        var ca1 = document.getElementById("company_address_1").value;
+        document.getElementById("preview_company_address").innerHTML = ca + ", <br>" + ca1;
+
+        var bo = document.getElementById("badge_option");
+        if (bo.value == "no_badge") {
+          document.getElementById("badge_img").innerHTML = "";
+        } else if (bo.value == "badge_1") {
+          document.getElementById("badge_img").innerHTML = "";
+          document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
+          document.getElementById("badge_img").innerHTML =
+            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Updated-BD-Badge-for-Sales.png' sizes='21' />";
+        } else if (bo.value == "badge_2") {
+          document.getElementById("badge_img").innerHTML = "";
+          document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
+          document.getElementById("badge_img").innerHTML =
+            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Updated-BD-Badge-for-Technical.png' sizes='21' />";
+        }
+        var bi = document.getElementById("promo_banner_img").value;
+        document.getElementById("preview_promo_banner_img").src = bi;
+        location.href = "#preview";
+      }
+
+      function CopyToClipboard(element) {
+        var doc = document,
+          text = doc.getElementById(element),
+          range,
+          selection;
+
+        if (doc.body.createTextRange) {
+          range = doc.body.createTextRange();
+          range.moveToElementText(text);
+          range.select();
+        } else if (window.getSelection) {
+          selection = window.getSelection();
+          range = doc.createRange();
+          range.selectNodeContents(text);
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        button = document.getElementById("btn_copy");
+        const currentLabel = "Copy Signature";
+        // Exit label update when already in progress
+        if (button.innerHTML === "Copied!") {
+          return;
+        }
+
+        // Update button label
+        button.innerHTML = "Copied!";
+        // Revert button label after 3 seconds
+        setTimeout(function () {
+          button.innerHTML = currentLabel;
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
