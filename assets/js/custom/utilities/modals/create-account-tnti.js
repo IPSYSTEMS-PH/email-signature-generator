@@ -34,11 +34,11 @@ function generate_data() {
     } else if (bo.value == "2") {
         document.getElementById("badge_img").innerHTML = "";
         document.getElementById("badge_img").innerHTML =
-            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Updated-BD-Badge-for-Sales.png' sizes='21' />";
+            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/sales-badges.png' sizes='21' /> <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/sales-badge-2.png' sizes='21' />";
     } else if (bo.value == "3") {
         document.getElementById("badge_img").innerHTML = "";
         document.getElementById("badge_img").innerHTML =
-            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Updated-BD-Badge-for-Technical.png' sizes='21' />";
+            " <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/technical-badge.png' sizes='21' /> <img  style=' text-align: left !important; height: auto; width: 60px; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/technical-badge-2.png' sizes='21' />";
     }
 
     var mo = document.querySelector('input[name="mobile_option"]:checked');
