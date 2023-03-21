@@ -57,6 +57,13 @@ function generate_data() {
     document.getElementById("button_preview").removeAttribute("hidden");
 
 }
+
+function preview_img() {
+    var bi = document.getElementById("promotional_banner_image_link").value;
+    document.getElementById("preview_img").src = bi;
+}
+
+
 var CreateEmailSig = function() {
     var e, t, i, o, a, r, s = [];
     return {
@@ -272,4 +279,5 @@ var KTModalShareEarn = {
 KTUtil.onDOMContentLoaded((function() {
     CreateEmailSig.init(),
         KTModalShareEarn.init()
+
 }));
