@@ -20,9 +20,9 @@ function generate_data() {
     document.getElementById("preview_company_mobile").innerHTML = cm;
     document.getElementById("preview_company_mobile").href = "tel:" + cm;
 
-    if (document.getElementById("mobile_number").value == "" || document.getElementById("mobile_number").value == "") {
-        document.getElementById("divider").innerHTML = "";
-    }
+    // if (document.getElementById("mobile_number").value == "" || document.getElementById("mobile_number").value == "") {
+    //     document.getElementById("divider").innerHTML = "";
+    // }
 
     var ca = document.getElementById("company_address").value;
     var ca1 = document.getElementById("company_address_2").value;
@@ -42,10 +42,10 @@ function generate_data() {
     }
 
     var mo = document.querySelector('input[name="mobile_option"]:checked');
-    if (mo.value == "2") {
+    if (mo.value == "1") {
         document.getElementById("mobile_option_preview").innerHTML =
             "Mobile/Viber";
-    } else if (mo.value == "1") {
+    } else if (mo.value == "2") {
         document.getElementById("mobile_option_preview").innerHTML =
             "Mobile";
 
