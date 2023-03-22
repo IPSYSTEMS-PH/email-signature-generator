@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "eslint.codeActionsOnSave.rules": null,
+    "editor.formatOnSaveMode": "modifications"
 }
