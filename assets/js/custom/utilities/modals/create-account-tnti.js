@@ -44,10 +44,10 @@ function generate_data() {
     var mo = document.querySelector('input[name="mobile_option"]:checked');
     if (mo.value == "1") {
         document.getElementById("mobile_option_preview").innerHTML =
-            "Mobile/Viber";
+            "Mobile/Viber:";
     } else if (mo.value == "2") {
         document.getElementById("mobile_option_preview").innerHTML =
-            "Mobile";
+            "Mobile:";
 
     }
     var bi = document.getElementById("promotional_banner_image_link").value;
