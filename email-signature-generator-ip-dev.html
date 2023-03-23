@@ -208,7 +208,7 @@
                                 <h3 class="stepper-title">Generate</h3>
                             </div>
                         </div>
-                        <form class="mx-auto mw-600px w-100 py-10" novalidate="novalidate" id="kt_create_account_form">
+                        <form class="mx-auto mw-600px w-100 py-10" novalidate="novalidate" id="kt_create_account_form" autocomplete="on">
                             <div data-kt-stepper-element="content" class="current">
                                 <div class="w-100">
                                     <div class="pb-10 pb-lg-15">
@@ -216,15 +216,15 @@
                                     </div>
                                     <div class="mb-10 fv-row">
                                         <label class="form-label mb-3 required">Full Name</label>
-                                        <input type="text" class="form-control form-control-lg" name="full_name" id="full_name" placeholder="Jethro T. Jorolan" value="Jethro T. Jorolan" />
+                                        <input type="text" class="form-control form-control-lg" name="full_name" id="full_name" placeholder="Jethro T. Jorolan" value="" autocomplete="name" />
                                     </div>
                                     <div class="mb-10 fv-row">
                                         <label class="form-label mb-3 required">Position</label>
-                                        <input type="text" class="form-control form-control-lg" name="position" id="position" placeholder="Web Developer" value="Web Developer" />
+                                        <input type="text" class="form-control form-control-lg" name="position" id="position" placeholder="Web Developer" value="" />
                                     </div>
                                     <div class="fv-row mb-10">
                                         <label class="form-label required">Email Address</label>
-                                        <input type="email" name="email_address" id="email_address" class="form-control form-control-lg" value="jjorolan@ipsystems.ph" />
+                                        <input type="email" name="email_address" id="email_address" class="form-control form-control-lg" value="" placeholder="jjorolan@ipsystems.ph" />
                                     </div>
                                     <div class="mb-0 fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                                         <label class="d-flex align-items-center form-label mb-5">Badge Options
@@ -237,7 +237,7 @@
                             </span>
                           </span>
                           <span class="form-check form-check-custom form-check-solid">
-                            <input class="form-check-input" type="radio" checked name="badge_option" id="badge_option" value="1" />
+                            <input class="form-check-input" type="radio" name="badge_option" id="badge_option" value="1" />
                           </span>
                         </label>
                                             <div class="separator separator-dashed my-5"></div>
@@ -278,7 +278,7 @@
                                     </div>
                                     <div class="fv-row mb-10">
                                         <label class="form-label required">Mobile Number</label>
-                                        <input type="tel" name="mobile_number" id="mobile_number" class="form-control form-control-lg" value="+630000000000" minlength="15" maxlength="15" />
+                                        <input type="tel" name="mobile_number" id="mobile_number" class="form-control form-control-lg" value="" minlength="15" maxlength="15" placeholder="+63" />
                                     </div>
                                     <div class="mb-0 fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                                         <label class="d-flex align-items-center form-label mb-5">Is your mobile number linked to Viber?
