@@ -26,7 +26,7 @@ function generate_data() {
 
     var ca = document.getElementById("company_address").value;
     var ca1 = document.getElementById("company_address_2").value;
-    document.getElementById("preview_company_address").innerHTML = ca + ", " + ca1;
+    document.getElementById("preview_company_address").innerHTML = ca + ", <br>" + ca1;
 
     var bo = document.querySelector('input[name="badge_option"]:checked');
     if (bo.value == "1") {
