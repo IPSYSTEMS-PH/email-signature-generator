@@ -39,17 +39,18 @@ function generate_data() {
         document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
         document.getElementById("badge_img").innerHTML =
             " <img  style=' text-align: left !important; height: auto;  margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Updated-BD-Badge-for-Technical-60w.png' sizes='21' />";
-    } else if (bo.value == "4") {
-        document.getElementById("badge_img").innerHTML = "";
-        document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
-        document.getElementById("badge_img").innerHTML =
-            " <img  style=' text-align: left !important; height: auto; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Sales-Professional-2023-60h.png' sizes='21' />";
-    } else if (bo.value == "5") {
-        document.getElementById("badge_img").innerHTML = "";
-        document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
-        document.getElementById("badge_img").innerHTML =
-            " <img  style=' text-align: left !important; height: auto;  margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Monitoring-Expert-2023-60h.png' sizes='21' />";
     }
+    // else if (bo.value == "4") {
+    //     document.getElementById("badge_img").innerHTML = "";
+    //     document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
+    //     document.getElementById("badge_img").innerHTML =
+    //         " <img  style=' text-align: left !important; height: auto; margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Sales-Professional-2023-60h.png' sizes='21' />";
+    // } else if (bo.value == "5") {
+    //     document.getElementById("badge_img").innerHTML = "";
+    //     document.getElementById("badge_wrap").style.borderLeft = "1px solid rgb(253, 154, 36)";
+    //     document.getElementById("badge_img").innerHTML =
+    //         " <img  style=' text-align: left !important; height: auto;  margin-left: 24px !important' src='https://ipsystems-ph.github.io/email-signature-generator/assets/media/Monitoring-Expert-2023-60h.png' sizes='21' />";
+    // }
 
     var mo = document.querySelector('input[name="mobile_option"]:checked');
     if (mo.value == "2") {
